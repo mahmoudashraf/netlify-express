@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "SSample server to server the frontend challenge",
+  "main": "index.js",
+  "scripts": {
+       "build": "babel src/index.js -d dist",
+      "start": "npm run build && node dist/index.js"
+      },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0"
+  }
+}
